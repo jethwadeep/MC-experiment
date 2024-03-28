@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:theme="@style/AppTheme"
+        tools:context=".MainActivity">
+
+    <com.alexmojaki.quiggles.PaintView
+            android:id="@+id/paintView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:layout_margin="30dp"
+    >
+
+        <Button
+                style="@style/MainMenuButton"
+                android:id="@+id/newButton"
+                android:text="@string/newButton"
+                android:drawableStart="@drawable/pencil_plus"
+        />
+        <Button
+                style="@style/MainMenuButton"
+                android:id="@+id/loadButton"
+                android:visibility="gone"
+                android:text="@string/loadButton"
+                android:drawableStart="@drawable/folder_open"
+        />
+        <Button
+                style="@style/MainMenuButton"
+                android:id="@+id/loadUnsavedButton"
+                android:text="@string/loadUnsavedButton"
+                android:drawableStart="@drawable/folder_clock"
+        />
+
+        <Button
+                style="@style/MainMenuButton"
+                android:id="@+id/heartButton"
+                android:text="@string/heartButton"
+        />
+    </LinearLayout>
+
+</RelativeLayout>
